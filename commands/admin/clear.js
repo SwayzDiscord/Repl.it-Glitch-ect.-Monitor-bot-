@@ -23,11 +23,8 @@ module.exports = {
 
         await message.channel.bulkDelete(deleteAmount, true);
 
-        message.channel.send(`Successfully Deleted ${deleteAmount} Messages`)
-            
-            .setColor('RANDOM')
+        message.channel.send(`Successfully Deleted ${deleteAmount} Messages`).then(message => message.delete({timeout: 4500}))
 
-        await message.channel.send(embed).then(message => message.delete({timeout: 5000}))
 
     }
 }
