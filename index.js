@@ -86,7 +86,7 @@ setInterval(function() {
     });
   });
   console.log("Interval :)")
-  client.user.setActivity(``);
+  client.user.setActivity(`.monitor | Watching ${count} websites`);
 }, 240000);
 
 app.get("/", async (request, response) => {
