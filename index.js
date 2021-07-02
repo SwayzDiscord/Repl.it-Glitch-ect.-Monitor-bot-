@@ -117,4 +117,4 @@ client.aliases = new Collection();
 });
 
 
-client.login(config.token);
+client.login(token);
