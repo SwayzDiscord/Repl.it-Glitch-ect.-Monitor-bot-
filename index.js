@@ -3,7 +3,7 @@ const {Client,
 const client = new Client({
   disableEveryone: true
 });
-const { prefix } = require("./config.json");
+const { prefix, token } = require("./config.json");
 const ms = require("ms");
 const http = require("http");
 const fetch = require("node-fetch");
