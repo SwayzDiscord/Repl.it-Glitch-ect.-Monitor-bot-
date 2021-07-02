@@ -20,9 +20,9 @@ module.exports = {
 
  
     if (check) {
-      if (check.link.length === 5) {
+      if (check.link.length === 20) {
         return send(
-          "You reached your limit, you can not add more than 5 website.",
+          "You reached your limit, you can not add more than 20 website.",
           message,
           "YELLOW"
         );
@@ -38,7 +38,7 @@ module.exports = {
       });
     }
 
-    fs.writeFile("./link.json", JSON.stringify(database, null, 2), err => {
+    fs.writeFile("./link.json", JSON.stringify(database, null, 20), err => {
       if (err) console.log(err);
     });
 
