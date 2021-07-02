@@ -9,7 +9,7 @@ module.exports = {
       .addField("> Admin", '`addrole`, `ban`, `kick`, `lockchannel`, `unlockchannel`, `mute`, `unmute`, `unban`, `warn`, `unwarn`, `warnings`, `purge`')
       .addField("> Basic", '`help`,')
       .addField("> Monitor",'`Monitor`,`Remove`,`Stats`')
-			.setFooter('Made by Kìng#6126')
+			.setFooter('Made by Corruption')
 			.setColor("GREEN");
 			message.channel.send(embed)
     }
