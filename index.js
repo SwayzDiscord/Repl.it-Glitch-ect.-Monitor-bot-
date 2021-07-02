@@ -3,7 +3,6 @@ const {Client,
 const client = new Client({
   disableEveryone: true
 });
-const { config } = require('dotenv')
 const { prefix } = require("./config.json");
 const ms = require("ms");
 const http = require("http");
@@ -118,4 +117,4 @@ client.aliases = new Collection();
 });
 
 
-client.login(process.env.TOKEN);
+client.login(config.token);
